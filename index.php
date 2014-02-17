@@ -24,80 +24,50 @@
 			#backgroundTable{height:100% !important; margin:0; padding:0; width:100% !important;}
 
 			/* Set font */
-			#emailContainer{background-color:white; font-family:Arial, sans-serif; font-weight:100; font-size: 16px;}
+			#emailContainer, h1, h2{font-family:Arial, sans-serif; font-weight:100;}
+			#emailContainer{font-weight:100 !important; font-size: 16px !important;}
+			h1{font-size: 40px !important;}
+			h2{font-size: 25px!important;}
 
-			.media-width{width:100%; padding-top:0; padding-left:10%; padding-bottom:0; padding-right:10%;} /* Setting the width only (say to %50) does not consistently size the content across mail clients -> instead use lef and right padding */
+			/* Get rid of hyperlink underlines */
+			a{text-decoration:none;}
 
-			.header-container img{width: 100%; display: block;} /* display: block; = dont conform to line height adjustment */
+			#emailContainer{background-color:white;}
+
+			.media-width{max-width:800px; width:100%; padding-top:0; padding-left:10%; padding-bottom:0; padding-right:10%;} /* Setting the width only (say to %50) does not consistently size the content across mail clients -> instead use lef and right padding */
+
+			.header-container img{max-width:600px; width:80%; display: block;} /* display: block; = dont conform to line height adjustment */
 
 			/* Waterboy logo */
 			.logo-container{background-color: #c3dded;}
-			.logo-container img{width: 100%;}
+			.logo-container img{max-width:600px; width:80%;}
 
 			/* Intro */
-			.intro-container{background-color:#0f77b6; color:#c3dded; padding-bottom:40px;}
-			.intro-container h1{color:white; margin-top:40px; margin-bottom:20px;}
+			.intro-container{background-color:#0f77b6; color:#c3dded; padding-top:40px; padding-bottom:40px;}
+			.intro-container h1{color:white; margin:0; padding-bottom:20px;}
 
 			/* Divider */
 			.divider{background-color:#023f5e;}
 
 			/* Thumbnail */
-			.main-container{color:#666666}
-			.main-container img{margin-top:40px;}
-			.main-container h2{color:#0f77b6; margin:0; margin-bottom:10px;}
+			.main-container{color:#666666; padding-bottom:40px;}
+			.main-container img{padding-top:40px; padding-bottom:10px;}
+			.main-container h2{color:#0f77b6; margin:0; padding-bottom:10px;}
 			.main-container .left-thumbnail{padding-right:20px;}
 
 			/* Social */
-			.social-container{background-color:#c3dded; margin-top:40px; padding-top: 30px; padding-bottom: 30px;}
+			.social-container{background-color:#c3dded; padding-top:30px; padding-bottom:30px;}
 			.social-container .twitter, .social-container .facebook, .social-container .youtube, .social-container .instagram{padding-top:10px; padding-left:10px; padding-bottom:10px; padding-right:10px;}
 
 			/* Contact */
-			.contact-container{background-color:#0f77b6; color:#c3dded; padding-bottom:40px;}
-			.contact-container h2{color:white; margin-top:40px; margin-top:40px;}
-			.contact-container .contact-button table{background-color:#c3dded; margin-top:20px;}
-			.contact-container .contact-button table h2{color:#0f77b6; margin-top:15px; margin-bottom:15px;}
+			.contact-container{background-color:#0f77b6; color:#c3dded; padding-top:40px; padding-bottom:40px;}
+			.contact-container h2{color:white; margin:0;}
+			.contact-container p{margin:0; padding-top:10px; padding-bottom:20px;}
+			.contact-container .contact-button table{background-color:#c3dded; width:100%; max-width:300px;}
+			.contact-container .contact-button table h2{color:#0f77b6; padding-top:15px; padding-bottom:15px;}
 
 			/* Footer */
 			.footer-container{background-color:#023f5e; color:#c3dded; padding-top:40px; padding-bottom:40px; font-size:10px;}
-
-			@media only screen and (min-width:1200px){
-				.media-width{padding-left:30% !important; padding-right:30% !important;}
-				.header-container img{width: 40% !important;}
-				.logo-container img{width: 40% !important;}
-			}
-
-			/* @media only screen and (max-width:1200px){ */
-			@media all and (max-width: 1199px) and (min-width: 800px){
-				.media-width{padding-left:25% !important; padding-right:25% !important;}
-				.header-container img{width: 50% !important;}
-				.logo-container img{width: 50% !important;}
-			}
-
-			/* @media only screen and (max-width:800px){ */
-			@media all and (max-width: 799px) and (min-width: 600px){
-				.media-width{padding-left:15% !important; padding-right:15% !important;}
-				.header-container img{width: 60% !important;}
-				.logo-container img{width: 60% !important;}
-			}
-
-			/* @media only screen and (max-width:600px){ */
-			@media all and (max-width: 599px) and (min-width: 400px){
-				img{width:100% !important;}
-				.media-width{padding-left:2.5% !important; padding-right:2.5% !important;}
-				.social-container .twitter, .social-container .facebook, .social-container .youtube, .social-container .instagram{padding-left:2.5% !important; padding-right:2.5% !important; width:20% !important;}
-				.contact-container .contact-button table{width:50% !important;}
-			}
-
-			/* @media only screen and (max-width:400px){ */
-			@media all and (max-width: 399px) and (min-width: 0){
-				img{width:100% !important;}
-				.media-width{padding-left:5% !important; padding-right:5% !important;}
-				.main-container .left-thumbnail{padding-right:0 !important;}
-				.main-container .left-thumbnail, .main-container .right-thumbnail{display:inline-block !important; width:100% !important;}
-				.main-container .main-thumbnail h2{padding-top:10px !important;}
-				.social-container .twitter, .social-container .facebook, .social-container .youtube, .social-container .instagram{display:inline-block !important; padding-left:2.5% !important; padding-right:2.5% !important; width:45% !important;}
-				.contact-container .contact-button table{width:100% !important;}
-			}
 
 		</style>
 
@@ -119,7 +89,7 @@
 									<table class="header-container" border="0" cellpadding="0" cellspacing="0" width="100%">
 										<tr>
 											<td align="center" valign="bottom">
-												<img src="http://www.strivegfx.com/fairfax/waterboy-edm/img/header-image.jpg">
+												<img src="http://www.strivegfx.com/fairfax/waterboy-edm/img/header-image.jpg" alt="Waterboy Header">
 											</td>
 										</tr>
 									</table>
@@ -129,7 +99,7 @@
 									<table class="logo-container" border="0" cellpadding="0" cellspacing="0" width="100%">
 										<tr>
 											<td align="center" valign="top">
-												<img src="http://www.strivegfx.com/fairfax/waterboy-edm/img/logo-shell.jpg">
+												<img src="http://www.strivegfx.com/fairfax/waterboy-edm/img/logo-shell.jpg" alt="Waterboy Logo">
 											</td>
 										</tr>
 									</table>
@@ -172,17 +142,12 @@
 											<td align="center" valign="top">
 												<table class="media-width" border="0" cellpadding="0" cellspacing="0">
 													<tr>
-														<td class="left-thumbnail" align="left" valign="top" width="300px">
-															<img src="http://www.strivegfx.com/fairfax/waterboy-edm/img/thumbnail-1.jpg">
-															<h2>This is a heading.</h2>
+														<td class="main-thumbnail" align="left" valign="top">
+															<img src="http://www.strivegfx.com/fairfax/waterboy-edm/img/thumbnail-1-2.jpg" alt="Waterboy Thumbnails">
+															<a href="http://www.waterboyapp.com/article1" target="_blank"><h2>This is a heading.</h2></a>
 															Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
 															tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
-															quis.
-														</td>
-														<td class="right-thumbnail" align="left" valign="top" width="300px">
-															<img src="http://www.strivegfx.com/fairfax/waterboy-edm/img/thumbnail-1.jpg">
-															<h2>This is a heading.</h2>
-															Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+															quis. Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
 															tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
 															quis.
 														</td>
@@ -191,8 +156,8 @@
 												<table class="media-width" border="0" cellpadding="0" cellspacing="0">
 													<tr>
 														<td class="main-thumbnail" align="left" valign="top">
-															<img src="http://www.strivegfx.com/fairfax/waterboy-edm/img/thumbnail-3.jpg">
-															<h2>This is a heading.</h2>
+															<a href="http://www.waterboyapp.com/video" target="_blank"><img src="http://www.strivegfx.com/fairfax/waterboy-edm/img/thumbnail-3.jpg" alt="Waterboy Video"></a>
+															<a href="http://www.waterboyapp.com/video" target="_blank"><h2>This is a heading.</h2></a>
 															Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
 															tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
 															quis. Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
@@ -213,16 +178,16 @@
 												<table class="media-width" border="0" cellpadding="0" cellspacing="0">
 													<tr>
 														<td class="twitter" align="left" valign="top">
-															<a href="//www.twitter.com/waterboyapp"><img src="http://www.strivegfx.com/fairfax/waterboy-edm/img/twitter.gif"></a>
+															<a href="http://www.twitter.com/waterboyapp" target="_blank"><img src="http://www.strivegfx.com/fairfax/waterboy-edm/img/twitter.gif" alt="Twitter"></a>
 														</td>
 														<td class="facebook" align="left" valign="top">
-															<a href="//www.facebook.com/waterboyapp"><img src="http://www.strivegfx.com/fairfax/waterboy-edm/img/facebook.gif"></a>
+															<a href="http://www.facebook.com/waterboyapp" target="_blank"><img src="http://www.strivegfx.com/fairfax/waterboy-edm/img/facebook.gif" alt="Facebook"></a>
 														</td>
 														<td class="youtube" align="left" valign="top">
-															<a href="//www.youtube.com/user/waterboyapp"><img src="http://www.strivegfx.com/fairfax/waterboy-edm/img/youtube.gif"></a>
+															<a href="http://www.youtube.com/user/waterboyapp" target="_blank"><img src="http://www.strivegfx.com/fairfax/waterboy-edm/img/youtube.gif" alt="Youtube"></a>
 														</td>
 														<td class="instagram" align="left" valign="top">
-															<a href="//instagram.com/waterboyapp"><img src="http://www.strivegfx.com/fairfax/waterboy-edm/img/instagram.gif"></a>
+															<a href="http://www.instagram.com/waterboyapp" target="_blank"><img src="http://www.strivegfx.com/fairfax/waterboy-edm/img/instagram.gif" alt="Instagram"></a>
 														</td>
 													</tr>
 												</table>
@@ -240,13 +205,13 @@
 													<tr>
 														<td align="left" valign="top">
 															<h2>This is a heading</h2>
-															Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
-															tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
-															quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
-															consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
-															cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
-															proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
-															<a class="contact-button" href="http://www.waterboyapp.com/contact">
+															<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+																tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+																quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+																consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+																cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+																proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+															<a class="contact-button" href="http://www.waterboyapp.com/contact" target="_blank">
 																<table border="0" cellpadding="0" cellspacing="0" width="290px">
 																	<tr>
 																		<td align="center" valign="center">
